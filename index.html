@@ -13,6 +13,8 @@
     <meta name="description" content="onpoint HTML 5 Template " />
 
     <!-- fonts -->
+      <!-- Link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +24,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+<!-- FontAwesome (CDN) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
 
@@ -75,24 +79,25 @@
                                 <a href="index.html"><img src="assets/images/resources/logo-2.png" alt="" /></a>
                             </div>
                             <div class="content-box">
-                                <h4>Sobre nós</h4>
-                                <p>A Sinal Verde é uma plataforma EAD especializada em cursos para motoristas que buscam aprimorar seus conhecimentos e obter formação contínua. Oferecemos cursos 100% online, acessíveis de qualquer lugar, com suporte disponível 24 horas..</p>
+                                <h4>About Us</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut
+                                    labore et magna aliqua. Ut enim ad minim veniam laboris.</p>
                             </div>
                             <div class="form-inner">
-                                <h4>Fale conosco</h4>
+                                <h4>Get a free quote</h4>
                                 <form action="assets/inc/sendemail.php" class="contact-form-validated"
                                     novalidate="novalidate">
                                     <div class="form-group">
-                                        <input type="text" name="name" placeholder="Nome" required="">
+                                        <input type="text" name="name" placeholder="Name" required="">
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" name="email" placeholder="E-mail" required="">
+                                        <input type="email" name="email" placeholder="Email" required="">
                                     </div>
                                     <div class="form-group">
-                                        <textarea name="message" placeholder="Menssagem..."></textarea>
+                                        <textarea name="message" placeholder="Message..."></textarea>
                                     </div>
                                     <div class="form-group message-btn">
-                                        <button type="submit" class="thm-btn form-inner__btn">Enviar e-mail</button>
+                                        <button type="submit" class="thm-btn form-inner__btn">Submit Now</button>
                                     </div>
                                 </form>
                                 <div class="result"></div>
@@ -126,17 +131,17 @@
 
                                         </li>
                                         <li>
-                                            <a href="#">Sobre nós</a>
+                                            <a href="about.html">Sobre nós</a>
                                         </li>
                                         
                                         <li class="dropdown">
                                             <a href="#">Cursos</a>
                                             <ul>
-                                                <li><a href="#">Formação
+                                                <li><a href="services.html">Formação
 </a></li>
-                                                <li><a href="#">Reciclagem</a></li>
-                                                <li><a href="#">NR's</a></li>
-                                                <li><a href="#">Outros</a></li>
+                                                <li><a href="services-carousel.html">Reciclagem</a></li>
+                                                <li><a href="express-freight-solutions.html">NR's</a></li>
+                                                <li><a href="quick-move-logistics.html">Outros</a></li>
                                                 
                                             </ul>
                                         </li>
@@ -149,7 +154,7 @@
                                             
                                         </li>
                                         <li>
-                                            <a href="#">Contato</a>
+                                            <a href="contact.html">Contato</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -167,7 +172,7 @@
                                         </a>
                                     </div>
                                     <div class="main-menu__btn-box">
-                                        <a href="#" class="thm-btn main-menu__btn">Inscreva-se<span></span></a>
+                                        <a href="about.html" class="thm-btn main-menu__btn">Inscreva-se<span></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -227,7 +232,7 @@
 
                                 <div class="main-slider__btn-and-call-box">
                                     <div class="main-slider__btn-box">
-                                        <a href="#" class="thm-btn main-slider__btn">MATRICULAR AGORA<span></span></a>
+                                        <a href="about.html" class="thm-btn main-slider__btn">MATRICULAR AGORA<span></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -262,7 +267,7 @@
 
                     <div class="main-slider__btn-and-call-box">
                         <div class="main-slider__btn-box">
-                            <a href="#" class="thm-btn main-slider__btn">MATRICULAR AGORA<span></span></a>
+                            <a href="services.html" class="thm-btn main-slider__btn">MATRICULAR AGORA<span></span></a>
                         </div>
                     </div>
                 </div>
@@ -299,7 +304,7 @@
 
                     <div class="main-slider__btn-and-call-box">
                         <div class="main-slider__btn-box">
-                            <a href="#" class="thm-btn main-slider__btn">MATRICULAR AGORA<span></span></a>
+                            <a href="services.html" class="thm-btn main-slider__btn">MATRICULAR AGORA<span></span></a>
                         </div>
                     </div>
                 </div>
@@ -314,11 +319,94 @@
     </div>
 </section>
 
+  <!--CARROSSEL DE VANTAGENS-->
+
+  <br>
+<section class="services-carousel-page no-autoplay-desktop" style="background-color: rgb(243, 243, 243);">
+    <div class="container"><br>
+        <div id="main-carousel" class="team-carousel thm-owl__carousel owl-theme owl-carousel carousel-dot-style" data-owl-options='{
+            "items": 1,
+            "margin": 30,
+            "smartSpeed": 700,
+            "loop": false,
+            "autoplay": 6000,
+            "nav": false,
+            "dots": true,
+            "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+            "responsive": {
+                "0": {
+                    "items": 1
+                },
+                "768": {
+                    "items": 2
+                },
+                "992": {
+                    "items": 3
+                },
+                "1200": {
+                    "items": 4
+                }
+            }
+        }'>
+            <!-- Pagamento Facilitado Start -->
+            <div class="item">
+                <div class="services-one__single">
+                    <div class="services-one__icon">
+                        <span class="fas fa-credit-card"></span> <!-- Ícone de pagamento -->
+                    </div><br>
+                    <h3 class="services-one__title"><a href="#">Pagamento Facilitado</a></h3>
+                    <p>Pague em até 12x no<br>cartão de crédito</p>
+                </div>
+            </div>
+            <!-- Pagamento Facilitado End -->
+
+            <!-- Compra Segura Start -->
+            <div class="item">
+                <div class="services-one__single">
+                    <div class="services-one__icon">
+                        <span class="fas fa-shield-alt"></span> <!-- Ícone de segurança -->
+                    </div><br>
+                    <h3 class="services-one__title"><a href="#">Compra Segura</a></h3>
+                    <p>Ambiente seguro para pagamentos online</p>
+                </div>
+            </div>
+            <!-- Compra Segura End -->
+
+            <!-- Suporte Profissional Start -->
+            <div class="item">
+                <div class="services-one__single">
+                    <div class="services-one__icon">
+                        <span class="fas fa-headset"></span> <!-- Ícone de suporte -->
+                    </div><br>
+                    <h3 class="services-one__title"><a href="#">Suporte Profissional</a></h3>
+                    <p>Equipe de suporte de extrema<br>qualidade a semana toda</p>
+                </div>
+            </div>
+            <!-- Suporte Profissional End -->
+
+            <!-- Curso 100% Online Start -->
+            <div class="item">
+                <div class="services-one__single">
+                    <div class="services-one__icon">
+                        <span class="fas fa-laptop"></span> <!-- Ícone de curso online -->
+                    </div><br>
+                    <h3 class="services-one__title"><a href="#">Curso 100% Online</a></h3>
+                    <p>Faça seu curso de onde estiver<br>e na hora que quiser!</p>
+                </div>
+            </div>
+            <!-- Curso 100% Online End -->
+        </div>
+    </div>
+</section>
 
 
-        <!--Main Slider End-->
 
-<section class="services-carousel-page">
+
+
+
+        <!--carrossel FORMAÇÃO-->
+
+<section class="services-carousel-page"  >
     <div class="container">
         <div class="section-title text-center">
             <div class="section-title__tagline-box">
@@ -369,7 +457,7 @@
                     </div>
 
                     <div class="services-one__btn-box">
-                        <a href="#" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+                        <a href="express-freight-solutions.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
                     </div>
                 </div>
             </div>
@@ -394,7 +482,7 @@
                     </div>
 
                     <div class="services-one__btn-box">
-                        <a href="#" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+                        <a href="quick-move-logistics.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
                     </div>
                 </div>
             </div>
@@ -419,7 +507,7 @@
                     </div>
 
                     <div class="services-one__btn-box">
-                        <a href="#" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+                        <a href="speedy-dispatch.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
                     </div>
                 </div>
             </div>
@@ -444,7 +532,7 @@
                     </div>
 
                     <div class="services-one__btn-box">
-                        <a href="#" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+                        <a href="swift-supply-chain.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
                     </div>
                 </div>
             </div>
@@ -454,7 +542,393 @@
         </div>
     </div><br><br><br>
 <div class="text-center">
-    <a href="#" class="thm-btn main-menu__btn">Ver Todos Cursos<span></span></a>
+    <a href="about.html" class="thm-btn main-menu__btn">Ver Todos Cursos<span></span></a>
+
+</div>
+      
+</section>
+
+<!--PQ ESCOLHER A SINAL VERDE-->
+<section class="counter-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5">
+                <div class="counter-one__left wow slideInLeft" data-wow-delay="100ms"
+                    data-wow-duration="2500ms">
+                    <div class="counter-one__img">
+                        <img src="assets/images/resources/counter-one-img-1.jpg" alt="">
+                        <div class="counter-one__video-link">
+                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
+                                <div class="counter-one__video-icon">
+                                    <span class="icon-play"></span>
+                                    <i class="ripple"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-7">
+                <div class="counter-one__right wow slideInRight" data-wow-delay="100ms"
+                    data-wow-duration="2500ms">
+                    <div class="section-title text-left">
+                        <div class="section-title__tagline-box">
+                            <span class="section-title__tagline">A escolha certa</span>
+                        </div>
+                        <h2 class="section-title__title">Por que escolher nossos cursos?</h2>
+                    </div>
+                    <p class="counter-one__right-text">Oferecemos cursos práticos e teóricos, com foco na capacitação completa do motorista, garantindo conhecimento de alta qualidade e reconhecimento nacional.</p>
+                 <br>   <ul class="counter-one__count-list list-unstyled">
+                        <li>
+                            <div class="counter-one__icon-and-count">
+                                <div class="counter-one__icon">
+                                    <span class="fas fa-graduation-cap fa-2x"></span> <!-- Icone de Certificação com tamanho ajustado -->
+                                </div>
+                                <div class="counter-one__count count-box">
+                                    <h3 class="count-text" data-stop="999" data-speed="1500">999</h3>
+                                    <span>+</span>
+                                </div>
+                            </div>
+                            <p class="counter-one__count-text">Alunos certificados com sucesso</p>
+                        </li>
+                        <li>
+                            <div class="counter-one__icon-and-count">
+                                <div class="counter-one__icon">
+                                    <span class="fas fa-book-open fa-2x"></span> <!-- Icone de Conteúdo com tamanho ajustado -->
+                                </div>
+                                <div class="counter-one__count count-box">
+                                    <h3 class="count-text" data-stop="500" data-speed="1500">500</h3>
+                                    <span class="counter-one__count-plus">+</span>
+                                </div>
+                            </div>
+                            <p class="counter-one__count-text">Horas de conteúdo teórico e prático</p>
+                        </li>
+                        <li>
+                            <div class="counter-one__icon-and-count">
+                                <div class="counter-one__icon">
+                                    <span class="fas fa-headset fa-2x"></span> <!-- Icone de Suporte com tamanho ajustado -->
+                                </div>
+                                <div class="counter-one__count count-box">
+                                    <h3 class="count-text" data-stop="24" data-speed="1500">24</h3>
+                                    <span>h</span>
+                                </div>
+                            </div>
+                            <p class="counter-one__count-text">Suporte contínuo para tirar dúvidas</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+<!--CARROSSEL 2-->
+<section class="services-carousel-page">
+    <div class="container">
+        <div class="section-title text-center">
+            <div class="section-title__tagline-box">
+                <span class="section-title__tagline">Cursos de</span>
+            </div>
+            <h2 class="section-title__title">RENOVAÇÃO</h2>
+        </div>
+        <div class="team-carousel thm-owl__carousel owl-theme owl-carousel carousel-dot-style" data-owl-options='{
+            "items": 3,
+            "margin": 30,
+            "smartSpeed": 700,
+            "loop":true,
+            "autoplay": 6000,
+            "nav":false,
+            "dots":true,
+            "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+            "responsive":{
+                "0":{
+                    "items":1
+                },
+                "768":{
+                    "items":2
+                },
+                "992":{
+                    "items": 3
+                },
+                "1200":{
+                    "items": 3
+                }
+            }
+        }'>
+            <!-- Services One Single Start -->
+            <div class="item">
+                <div class="services-one__single">
+                    <div class="services-one__image-box">
+                        <img src="assets/images/slide1.png" alt="Service Image 1">
+                    </div><br>
+                    <h3 class="team-one__title">Curso MOPP - Formação <br>(Transporte de Produtos Perigosos)</h3>
+                    <br>
+                    <!-- Info added below title -->
+                    <div class="course-info">
+                        <div class="course-price">
+                           <p class="price-strike">De: R$289,90</p>
+                            <h4 class="discounted-price"><span class="highlight">R$179,97</span></h4>
+                            <h3 class="pix-price"><span class="highlight">R$172,77 com Pix</span></h3>
+                        </div>
+                        <p class="installments">3 x de R$59,99 sem juros</p>
+                    </div>
+
+                    <div class="services-one__btn-box">
+                        <a href="express-freight-solutions.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Services One Single End -->
+
+            <!-- Services One Single Start -->
+            <div class="item">
+                <div class="services-one__single">
+                    <div class="services-one__image-box">
+                        <img src="assets/images/slide2.png" alt="Service Image 2">
+                    </div><br>
+                    <h3 class="team-one__title">Curso Cargas Indivisíveis <br>- Formação</h3>
+                    <br>
+                    <!-- Info added below title -->
+                    <div class="course-info">
+                        <div class="course-price">
+                              <p class="price-strike">De: R$289,90</p>
+                            <h4 class="discounted-price"><span class="highlight">R$179,97</span></h4>
+                            <h3 class="pix-price"><span class="highlight">R$172,77 com Pix</span></h3>
+                        </div>
+                        <p class="installments">3 x de R$59,99 sem juros</p>
+                    </div>
+
+                    <div class="services-one__btn-box">
+                        <a href="quick-move-logistics.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Services One Single End -->
+
+            <!-- Services One Single Start -->
+            <div class="item">
+                <div class="services-one__single">
+                    <div class="services-one__image-box">
+                        <img src="assets/images/slide3.png" alt="Service Image 3">
+                    </div><br>
+                    <h3 class="team-one__title">Curso Transporte Coletivo <br>de Passageiros - Formação</h3>
+                    <br>
+                    <!-- Info added below title -->
+                    <div class="course-info">
+                        <div class="course-price">
+                             <p class="price-strike">De: R$289,90</p>
+                            <h4 class="discounted-price"><span class="highlight">R$179,97</span></h4>
+                            <h3 class="pix-price"><span class="highlight">R$172,77 com Pix</span></h3>
+                        </div>
+                        <p class="installments">3 x de R$59,99 sem juros</p>
+                    </div>
+
+                    <div class="services-one__btn-box">
+                        <a href="speedy-dispatch.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Services One Single End -->
+
+            <!-- Services One Single Start -->
+            <div class="item">
+                <div class="services-one__single">
+                    <div class="services-one__image-box">
+                        <img src="assets/images/slide4.png" alt="Service Image 4">
+                    </div><br>
+                    <h3 class="team-one__title">Curso de Transporte Escolar <br>- Formação</h3>
+                    <br>
+                    <!-- Info added below title -->
+                    <div class="course-info">
+                        <div class="course-price">
+                             <p class="price-strike">De: R$289,90</p>
+                            <h4 class="discounted-price"><span class="highlight">R$179,97</span></h4>
+                            <h3 class="pix-price"><span class="highlight">R$172,77 com Pix</span></h3>
+                        </div>
+                        <p class="installments">3 x de R$59,99 sem juros</p>
+                    </div>
+
+                    <div class="services-one__btn-box">
+                        <a href="swift-supply-chain.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Services One Single End -->
+
+            <!-- Continue with other items similarly -->
+        </div>
+    </div><br><br><br>
+<div class="text-center">
+    <a href="about.html" class="thm-btn main-menu__btn">Ver Todos Cursos<span></span></a>
+
+</div>
+      
+</section>
+
+<!--BANNER GRANDE-->
+ <section class="page-header">
+    <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);">
+    </div>
+    <div class="container">
+        <div class="page-header__inner">
+           <h2>Cursos com<br><span class="highlight-box"><font color="#000000" >Descontos Imperdíveis!</font></span><br>Invista no seu<br>futuro agora.</h2>
+
+<div class="thm-breadcrumb__box">
+    <ul class="thm-breadcrumb list-unstyled">
+        <span><font color="white" size="4">Matricule-se já e<br>aproveite o <font color="ffc400">desconto!</font></font></span>
+    </ul>
+</div>
+<br><br><br>
+            <!-- Botão CTA -->
+            <div class="cta-button">
+               <a href="express-freight-solutions.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<br><br>
+
+<!-- Carrossel 3-->
+        <section class="services-carousel-page">
+    <div class="container">
+        <div class="section-title text-center">
+            <div class="section-title__tagline-box">
+                <span class="section-title__tagline">Cursos</span>
+            </div>
+            <h2 class="section-title__title">COMPLEMENTARES</h2>
+        </div>
+        <div class="team-carousel thm-owl__carousel owl-theme owl-carousel carousel-dot-style" data-owl-options='{
+            "items": 3,
+            "margin": 30,
+            "smartSpeed": 700,
+            "loop":true,
+            "autoplay": 6000,
+            "nav":false,
+            "dots":true,
+            "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+            "responsive":{
+                "0":{
+                    "items":1
+                },
+                "768":{
+                    "items":2
+                },
+                "992":{
+                    "items": 3
+                },
+                "1200":{
+                    "items": 3
+                }
+            }
+        }'>
+            <!-- Services One Single Start -->
+            <div class="item">
+                <div class="services-one__single">
+                    <div class="services-one__image-box">
+                        <img src="assets/images/slide1.png" alt="Service Image 1">
+                    </div><br>
+                    <h3 class="team-one__title">Curso MOPP - Formação <br>(Transporte de Produtos Perigosos)</h3>
+                    <br>
+                    <!-- Info added below title -->
+                    <div class="course-info">
+                        <div class="course-price">
+                           <p class="price-strike">De: R$289,90</p>
+                            <h4 class="discounted-price"><span class="highlight">R$179,97</span></h4>
+                            <h3 class="pix-price"><span class="highlight">R$172,77 com Pix</span></h3>
+                        </div>
+                        <p class="installments">3 x de R$59,99 sem juros</p>
+                    </div>
+
+                    <div class="services-one__btn-box">
+                        <a href="express-freight-solutions.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Services One Single End -->
+
+            <!-- Services One Single Start -->
+            <div class="item">
+                <div class="services-one__single">
+                    <div class="services-one__image-box">
+                        <img src="assets/images/slide2.png" alt="Service Image 2">
+                    </div><br>
+                    <h3 class="team-one__title">Curso Cargas Indivisíveis <br>- Formação</h3>
+                    <br>
+                    <!-- Info added below title -->
+                    <div class="course-info">
+                        <div class="course-price">
+                              <p class="price-strike">De: R$289,90</p>
+                            <h4 class="discounted-price"><span class="highlight">R$179,97</span></h4>
+                            <h3 class="pix-price"><span class="highlight">R$172,77 com Pix</span></h3>
+                        </div>
+                        <p class="installments">3 x de R$59,99 sem juros</p>
+                    </div>
+
+                    <div class="services-one__btn-box">
+                        <a href="quick-move-logistics.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Services One Single End -->
+
+            <!-- Services One Single Start -->
+            <div class="item">
+                <div class="services-one__single">
+                    <div class="services-one__image-box">
+                        <img src="assets/images/slide3.png" alt="Service Image 3">
+                    </div><br>
+                    <h3 class="team-one__title">Curso Transporte Coletivo <br>de Passageiros - Formação</h3>
+                    <br>
+                    <!-- Info added below title -->
+                    <div class="course-info">
+                        <div class="course-price">
+                             <p class="price-strike">De: R$289,90</p>
+                            <h4 class="discounted-price"><span class="highlight">R$179,97</span></h4>
+                            <h3 class="pix-price"><span class="highlight">R$172,77 com Pix</span></h3>
+                        </div>
+                        <p class="installments">3 x de R$59,99 sem juros</p>
+                    </div>
+
+                    <div class="services-one__btn-box">
+                        <a href="speedy-dispatch.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Services One Single End -->
+
+            <!-- Services One Single Start -->
+            <div class="item">
+                <div class="services-one__single">
+                    <div class="services-one__image-box">
+                        <img src="assets/images/slide4.png" alt="Service Image 4">
+                    </div><br>
+                    <h3 class="team-one__title">Curso de Transporte Escolar <br>- Formação</h3>
+                    <br>
+                    <!-- Info added below title -->
+                    <div class="course-info">
+                        <div class="course-price">
+                             <p class="price-strike">De: R$289,90</p>
+                            <h4 class="discounted-price"><span class="highlight">R$179,97</span></h4>
+                            <h3 class="pix-price"><span class="highlight">R$172,77 com Pix</span></h3>
+                        </div>
+                        <p class="installments">3 x de R$59,99 sem juros</p>
+                    </div>
+
+                    <div class="services-one__btn-box">
+                        <a href="swift-supply-chain.html" class="thm-btn services-one__btn">INSCRIÇÃO<span></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Services One Single End -->
+
+            <!-- Continue with other items similarly -->
+        </div>
+    </div><br><br><br>
+<div class="text-center">
+    <a href="about.html" class="thm-btn main-menu__btn">Ver Todos Cursos<span></span></a>
 
 </div>
       
@@ -462,486 +936,39 @@
 
 
 
-
-
-
-
-
-        
-
-        <!--Why Choose One Start-->
-        <section class="why-choose-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="why-choose-one__left">
-                            <div class="section-title text-left">
-                                <div class="section-title__tagline-box">
-                                    <span class="section-title__tagline">Sinal Verde Cursos de Trânsito: </span>
-                                </div>
-                                <h2 class="section-title__title">Capacitação Completa para Motoristas
-                                </h2>
-                            </div>
-                            <p class="why-choose-one__text">A Sinal Verde é uma plataforma EAD especializada em cursos para motoristas que buscam aprimorar seus conhecimentos e obter formação contínua. Oferecemos cursos 100% online, acessíveis de qualquer lugar, com suporte disponível 24 horas. Nossos cursos são reconhecidos e aceitos por todos os Detrans, garantindo a qualidade da capacitação. Com sede em Campinas, a Sinal Verde já capacitou milhares de motoristas que agora se destacam no mercado com uma formação qualificada e atualizada.</p>
-                            <div class="why-choose-one__btn-box">
-                                <a href="#" class="thm-btn why-choose-one__btn">Sobre nós<span></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="why-choose-one__right">
-                            <div class="why-choose-one__img wow slideInRight" data-wow-delay="100ms"
-                                data-wow-duration="2500ms">
-                                <img src="assets/images/resources/why-choose-one-img-1.jpg" alt="">
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--TESTEMUNHAS-->
+<section class="testimonial-one">
+    <div class="container">
+        <div class="testimonial-one__inner">
+            <div class="testimonial-one__img-one">
+                <img src="assets/images/testimonial/testimonial-one-img-1.jpg" alt="">
             </div>
-        </section>
-        <!--Why Choose One End-->
-
-        <!--Project One Start-->
-        <section class="project-one">
-            <div class="container">
-                <div class="section-title text-center">
-                    <div class="section-title__tagline-box">
-                        <span class="section-title__tagline">Our projects</span>
-                    </div>
-                    <h2 class="section-title__title">Let’s discover all our <br>recent project</h2>
+            <div class="section-title text-center">
+                <div class="section-title__tagline-box">
+                    <span class="section-title__tagline">Clientes Testemunham</span>
                 </div>
-                <div class="row masonary-layout">
-                    <!--Project One Single Start-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="project-one__single">
-                            <div class="project-one__img-box">
-                                <div class="project-one__img">
-                                    <img src="assets/images/project/project-1-1.jpg" alt="">
-                                </div>
-                                <div class="project-one__content">
-                                    <p class="project-one__sub-title">Express Logistics</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Delivering success
-                                            through logistics</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project One Single End-->
-                    <!--Project One Single Start-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="project-one__single">
-                            <div class="project-one__img-box">
-                                <div class="project-one__img">
-                                    <img src="assets/images/project/project-1-2.jpg" alt="">
-                                </div>
-                                <div class="project-one__content">
-                                    <p class="project-one__sub-title">Express Logistics</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Delivering success
-                                            through logistics</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project One Single End-->
-                    <!--Project One Single Start-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="project-one__single">
-                            <div class="project-one__img-box">
-                                <div class="project-one__img">
-                                    <img src="assets/images/project/project-1-3.jpg" alt="">
-                                </div>
-                                <div class="project-one__content">
-                                    <p class="project-one__sub-title">Express Logistics</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Delivering success
-                                            through logistics</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project One Single End-->
-                    <!--Project One Single Start-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="project-one__single">
-                            <div class="project-one__img-box">
-                                <div class="project-one__img">
-                                    <img src="assets/images/project/project-1-4.jpg" alt="">
-                                </div>
-                                <div class="project-one__content">
-                                    <p class="project-one__sub-title">Express Logistics</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Delivering success
-                                            through logistics</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project One Single End-->
-                    <!--Project One Single Start-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="project-one__single">
-                            <div class="project-one__img-box">
-                                <div class="project-one__img">
-                                    <img src="assets/images/project/project-1-5.jpg" alt="">
-                                </div>
-                                <div class="project-one__content">
-                                    <p class="project-one__sub-title">Express Logistics</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Delivering success
-                                            through logistics</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project One Single End-->
-                    <!--Project One Single Start-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="project-one__single">
-                            <div class="project-one__img-box">
-                                <div class="project-one__img">
-                                    <img src="assets/images/project/project-1-6.jpg" alt="">
-                                </div>
-                                <div class="project-one__content">
-                                    <p class="project-one__sub-title">Express Logistics</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Delivering success
-                                            through logistics</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project One Single End-->
-                    <!--Project One Single Start-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="project-one__single">
-                            <div class="project-one__img-box">
-                                <div class="project-one__img">
-                                    <img src="assets/images/project/project-1-7.jpg" alt="">
-                                </div>
-                                <div class="project-one__content">
-                                    <p class="project-one__sub-title">Express Logistics</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Delivering success
-                                            through logistics</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project One Single End-->
-                    <!--Project One Single Start-->
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="project-one__single">
-                            <div class="project-one__img-box">
-                                <div class="project-one__img">
-                                    <img src="assets/images/project/project-1-8.jpg" alt="">
-                                </div>
-                                <div class="project-one__content">
-                                    <p class="project-one__sub-title">Express Logistics</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Delivering success
-                                            through logistics</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project One Single End-->
-                    <!--Project One Single Start-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="project-one__single">
-                            <div class="project-one__img-box">
-                                <div class="project-one__img">
-                                    <img src="assets/images/project/project-1-9.jpg" alt="">
-                                </div>
-                                <div class="project-one__content">
-                                    <p class="project-one__sub-title">Express Logistics</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Delivering success
-                                            through logistics</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project One Single End-->
-                </div>
+                <h2 class="section-title__title">Cursos Profissionais para o Sucesso</h2>
             </div>
-        </section>
-        <!--Project One End-->
-
-        <!--Brand One Start-->
-        <section class="brand-one">
-            <div class="container">
-                <p class="brand-one__text count-box">Join the <span class="count-text" data-stop="150"
-                        data-speed="1500">00</span><span>+</span> companies trusting maxline company</p>
-                <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100,
-                "slidesPerView": 5,
-                "loop": true,
-                "navigation": {
-                    "nextEl": "#brand-one__swiper-button-next",
-                    "prevEl": "#brand-one__swiper-button-prev"
-                },
-                "autoplay": { "delay": 5000 },
-                "breakpoints": {
-                    "0": {
-                        "spaceBetween": 30,
-                        "slidesPerView": 1
-                    },
-                    "375": {
-                        "spaceBetween": 30,
-                        "slidesPerView": 1
-                    },
-                    "575": {
-                        "spaceBetween": 30,
-                        "slidesPerView": 2
-                    },
-                    "767": {
-                        "spaceBetween": 50,
-                        "slidesPerView": 3
-                    },
-                    "991": {
-                        "spaceBetween": 50,
-                        "slidesPerView": 4
-                    },
-                    "1199": {
-                        "spaceBetween": 100,
-                        "slidesPerView": 5
-                    },
-                    "1199": {
-                        "spaceBetween": 100,
-                        "slidesPerView": 5
-                    }
-                }}'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-1.png" alt="">
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-2.png" alt="">
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-3.png" alt="">
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-4.png" alt="">
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-5.png" alt="">
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-1.png" alt="">
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-2.png" alt="">
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-3.png" alt="">
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-4.png" alt="">
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-5.png" alt="">
-                        </div><!-- /.swiper-slide -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Brand One End-->
-
-        <!--About One Start-->
-        <section class="about-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="about-one__left">
-                            <div class="section-title text-left">
-                                <div class="section-title__tagline-box">
-                                    <span class="section-title__tagline">About Us</span>
-                                </div>
-                                <h2 class="section-title__title">Seamless logistics for your <br> business needs</h2>
-                            </div>
-                            <p class="about-one__text">Construction is an essential industry that involves building
-                                adesigning the a structures such as buildings roads, bridges</p>
-                            <div class="about-one__list-box">
-                                <div class="about-one__shape-1">
-                                    <img src="assets/images/shapes/about-one-shape-1.png" alt="">
-                                </div>
-                                <ul class="about-one__list list-unstyled">
-                                    <li>
-                                        <div class="about-one__icon">
-                                            <span class="icon-conveyor-1"></span>
-                                        </div>
-                                        <h3>Delivering successthe <br> through logistics</h3>
-                                    </li>
-                                    <li>
-                                        <div class="about-one__icon">
-                                            <span class="icon-clock"></span>
-                                        </div>
-                                        <h3>Logistics expertise for your<br> competitive </h3>
-                                    </li>
-                                    <li>
-                                        <div class="about-one__icon">
-                                            <span class="icon-fragile"></span>
-                                        </div>
-                                        <h3>Streamliningm supply chain<br> processes</h3>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="about-one__btn-box">
-                                <a href="about.html" class="thm-btn about-one__btn">Read more<span></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="about-one__right wow fadeInRight" data-wow-delay="300ms">
-                            <div class="about-one__img-box">
-                                <div class="about-one__img-1">
-                                    <img src="assets/images/resources/about-one-img-1.jpg" alt="">
-                                </div>
-                                <div class="about-one__img-2">
-                                    <img src="assets/images/resources/about-one-img-2.jpg" alt="">
-                                </div>
-                                <div class="about-one__trusted-box">
-                                    <div class="about-one__trust-icon">
-                                        <span class="icon-ionic-ios-people"></span>
-                                    </div>
-                                    <div class="about-one__trust-content">
-                                        <div class="about-one__trust-count count-box">
-                                            <h3 class="count-text" data-stop="6" data-speed="1500">00</h3>
-                                            <span>k</span>
-                                            <span class="about-one__trust-plus">+</span>
-                                        </div>
-                                        <p class="about-one__trust-text">Trusted Customer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--About One End-->
-
-        <!--Counter One Start-->
-        <section class="counter-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5">
-                        <div class="counter-one__left wow slideInLeft" data-wow-delay="100ms"
-                            data-wow-duration="2500ms">
-                            <div class="counter-one__img">
-                                <img src="assets/images/resources/counter-one-img-1.jpg" alt="">
-                                <div class="counter-one__video-link">
-                                    <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                        <div class="counter-one__video-icon">
-                                            <span class="icon-play"></span>
-                                            <i class="ripple"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-7">
-                        <div class="counter-one__right wow slideInRight" data-wow-delay="100ms"
-                            data-wow-duration="2500ms">
-                            <div class="section-title text-left">
-                                <div class="section-title__tagline-box">
-                                    <span class="section-title__tagline">Our Features</span>
-                                </div>
-                                <h2 class="section-title__title">Simplifying your logistics of <br>the challenges</h2>
-                            </div>
-                            <p class="counter-one__right-text">Logistic service involves the planning, implementation,
-                                and control of the efficient and effective movement and storage of goods and materials.
-                            </p>
-                            <ul class="counter-one__count-list list-unstyled">
-                                <li>
-                                    <div class="counter-one__icon-and-count">
-                                        <div class="counter-one__icon">
-                                            <span class="icon-schedule"></span>
-                                        </div>
-                                        <div class="counter-one__count count-box">
-                                            <h3 class="count-text" data-stop="100" data-speed="1500">00</h3>
-                                            <span>+</span>
-                                        </div>
-                                    </div>
-                                    <p class="counter-one__count-text">Our Happy Customer</p>
-                                </li>
-                                <li>
-                                    <div class="counter-one__icon-and-count">
-                                        <div class="counter-one__icon">
-                                            <span class="icon-schedule"></span>
-                                        </div>
-                                        <div class="counter-one__count count-box">
-                                            <h3 class="count-text" data-stop="2" data-speed="1500">00</h3>
-                                            <span>k</span>
-                                            <span class="counter-one__count-plus">+</span>
-                                        </div>
-                                    </div>
-                                    <p class="counter-one__count-text">Our Team Member</p>
-                                </li>
-                                <li>
-                                    <div class="counter-one__icon-and-count">
-                                        <div class="counter-one__icon">
-                                            <span class="icon-schedule"></span>
-                                        </div>
-                                        <div class="counter-one__count count-box">
-                                            <h3 class="count-text" data-stop="3" data-speed="1500">00</h3>
-                                            <span>k</span>
-                                            <span class="counter-one__count-plus">+</span>
-                                        </div>
-                                    </div>
-                                    <p class="counter-one__count-text">Our Clients Reviews</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Counter One End-->
-
-        <!--Team One Start-->
-        <section class="team-one">
-            <div class="container">
-                <div class="team-one__top">
-                    <div class="section-title text-left">
-                        <div class="section-title__tagline-box">
-                            <span class="section-title__tagline">Our Team</span>
-                        </div>
-                        <h2 class="section-title__title">Simplifying your logistics of <br>the challenges</h2>
-                    </div>
-                    <div class="team-one__nav">
-                        <div class="swiper-button-next1">
-                            <i class="icon-arrow-left"></i>
-                        </div>
-                        <div class="swiper-button-prev1">
-                            <i class="icon-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-one__bottom">
-                    <div class="thm-swiper__slider swiper-container" data-swiper-options='{
-                        "slidesPerView": 1, 
-                        "spaceBetween": 0,
-                        "speed": 2000,
-                        "loop": true,
-                        "pagination": {
-                            "el": ".swiper-dot-style1",
-                            "type": "bullets",
-                            "clickable": true
-                        },
-    
-                        
-    
-                        "navigation": {
-                            "nextEl": ".swiper-button-prev1",
-                            "prevEl": ".swiper-button-next1"
-                        },
-                        "autoplay": { "delay": 9000 },
-                        "breakpoints": {
+            <div class="row">
+                <div class="col-xl-5"></div>
+                <div class="col-xl-7 col-lg-9">
+                    <div class="testimonial-one__right">
+                        <div class="thm-swiper__slider swiper-container" data-swiper-options='{
+                            "slidesPerView": 1, 
+                            "spaceBetween": 0,
+                            "speed": 2000,
+                            "loop": true,
+                            "pagination": {
+                                "el": ".swiper-dot-style1",
+                                "type": "bullets",
+                                "clickable": true
+                            },
+                            "navigation": {
+                                "nextEl": ".swiper-button-prev1",
+                                "prevEl": ".swiper-button-next1"
+                            },
+                            "autoplay": { "delay": 9000 },
+                            "breakpoints": {
                                 "0": {
                                     "spaceBetween": 0,
                                     "slidesPerView": 1
@@ -960,534 +987,358 @@
                                 },
                                 "992": {
                                     "spaceBetween": 30,
-                                    "slidesPerView": 2
+                                    "slidesPerView": 1
                                 },
                                 "1200": {
                                     "spaceBetween": 30,
-                                    "slidesPerView":3
+                                    "slidesPerView":1
                                 },
                                 "1320": {
                                     "spaceBetween": 30,
-                                    "slidesPerView":3
+                                    "slidesPerView":1
                                 }
                             }
-                    }'>
-                        <div class="swiper-wrapper">
-                            <!--Team One Single Start-->
-                            <div class="swiper-slide">
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img src="assets/images/team/team-1-1.jpg" alt="">
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h3 class="team-one__title"><a href="team-details.html">Brooklyn Simmons</a>
-                                        </h3>
-                                        <p class="team-one__sub-title">Quick Cargo</p>
-                                        <div class="team-one__social">
-                                            <a href="#"><span class="icon-instagram"></span></a>
-                                            <a href="#"><span class="icon-linkedin-in"></span></a>
-                                            <a href="#"><span class="icon-Vector"></span></a>
-                                            <a href="#"><span class="icon-facebook-f"></span></a>
+                        }'>
+                            <div class="swiper-wrapper">
+                                <!--Testimonial One Single Start-->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-one__single">
+                                        <div class="testimonial-one__quote">
+                                            <span class="icon-quote"></span>
                                         </div>
+                                        <div class="testimonial-one__client-img">
+                                            <img src="assets/images/testimonial/testimonial-1-1.jpg" alt="">
+                                        </div>
+                                        <div class="testimonial-one__ratting">
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star last-star"></span>
+                                        </div>
+                                        <h3 class="testimonial-one__client-name">João Silva</h3>
+                                        <p class="testimonial-one__client-sub-title">Curso MOPP</p>
+                                        <p class="testimonial-one__text">O curso MOPP foi fundamental para a minha atuação como motorista de transporte de produtos perigosos. A didática foi excelente e os materiais de apoio super úteis. Recomendo!</p>
                                     </div>
                                 </div>
-                            </div>
-                            <!--Team One Single End-->
-                            <!--Team One Single Start-->
-                            <div class="swiper-slide">
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img src="assets/images/team/team-1-2.jpg" alt="">
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h3 class="team-one__title"><a href="team-details.html">Sakib Hasan</a>
-                                        </h3>
-                                        <p class="team-one__sub-title">Speedy Trans</p>
-                                        <div class="team-one__social">
-                                            <a href="#"><span class="icon-instagram"></span></a>
-                                            <a href="#"><span class="icon-linkedin-in"></span></a>
-                                            <a href="#"><span class="icon-Vector"></span></a>
-                                            <a href="#"><span class="icon-facebook-f"></span></a>
+                                <!--Testimonial One Single End-->
+                                
+                                <!--Testimonial One Single Start-->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-one__single">
+                                        <div class="testimonial-one__quote">
+                                            <span class="icon-quote"></span>
                                         </div>
+                                        <div class="testimonial-one__client-img">
+                                            <img src="assets/images/testimonial/testimonial-1-2.jpg" alt="">
+                                        </div>
+                                        <div class="testimonial-one__ratting">
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star last-star"></span>
+                                        </div>
+                                        <h3 class="testimonial-one__client-name">Maria Oliveira</h3>
+                                        <p class="testimonial-one__client-sub-title">Direção Defensiva<br>e Primeiros Socorros</p>
+                                        <p class="testimonial-one__text">O curso de direção defensiva e primeiros socorros foi muito completo. Aprendi a agir rapidamente em situações de emergência, o que me deixou mais segura no volante.</p>
                                     </div>
                                 </div>
-                            </div>
-                            <!--Team One Single End-->
-                            <!--Team One Single Start-->
-                            <div class="swiper-slide">
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img src="assets/images/team/team-1-3.jpg" alt="">
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h3 class="team-one__title"><a href="team-details.html">Fahda Hossain</a>
-                                        </h3>
-                                        <p class="team-one__sub-title">Efficient Transport</p>
-                                        <div class="team-one__social">
-                                            <a href="#"><span class="icon-instagram"></span></a>
-                                            <a href="#"><span class="icon-linkedin-in"></span></a>
-                                            <a href="#"><span class="icon-Vector"></span></a>
-                                            <a href="#"><span class="icon-facebook-f"></span></a>
+                                <!--Testimonial One Single End-->
+                                
+                                <!--Testimonial One Single Start-->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-one__single">
+                                        <div class="testimonial-one__quote">
+                                            <span class="icon-quote"></span>
                                         </div>
+                                        <div class="testimonial-one__client-img">
+                                            <img src="assets/images/testimonial/testimonial-1-3.jpg" alt="">
+                                        </div>
+                                        <div class="testimonial-one__ratting">
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star last-star"></span>
+                                        </div>
+                                        <h3 class="testimonial-one__client-name">Carlos Santos</h3>
+                                        <p class="testimonial-one__client-sub-title">Curso de Reciclagem<br>para Motorista Infrator</p>
+                                        <p class="testimonial-one__text">O curso de reciclagem foi uma ótima oportunidade para regularizar a minha situação. A abordagem foi clara e objetiva, além de ser muito acessível.</p>
                                     </div>
                                 </div>
+                                <!--Testimonial One Single End-->
+                                
+                                <!--Testimonial One Single Start-->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-one__single">
+                                        <div class="testimonial-one__quote">
+                                            <span class="icon-quote"></span>
+                                        </div>
+                                        <div class="testimonial-one__client-img">
+                                            <img src="assets/images/testimonial/testimonial-1-4.jpg" alt="">
+                                        </div>
+                                        <div class="testimonial-one__ratting">
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star last-star"></span>
+                                        </div>
+                                        <h3 class="testimonial-one__client-name">Ana Souza</h3>
+                                        <p class="testimonial-one__client-sub-title">Curso de<br>Transporte Escolar</p>
+                                        <p class="testimonial-one__text">A formação para transporte escolar foi excelente. As informações sobre segurança e regulamentos foram muito detalhadas. Agora me sinto muito mais preparada para o trabalho.</p>
+                                    </div>
+                                </div>
+                                <!--Testimonial One Single End-->
                             </div>
-                            <!--Team One Single End-->
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Team One End-->
+            <div class="testimonial-one__dot-style">
+                <div class="swiper-dot-style1"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Testimonial One End-->
 
-        <!--Why Are We Start-->
-        <section class="why-are-we">
+
+
+
+       
+
+         <!--sobre nós-->
+        <section class="why-choose-one">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4">
-                        <div class="why-are-we__left">
-                            <div class="why-are-we__img">
-                                <img src="assets/images/resources/why-are-we-img-1.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <div class="why-are-we__right">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="why-choose-one__left">
                             <div class="section-title text-left">
                                 <div class="section-title__tagline-box">
-                                    <span class="section-title__tagline">Why are we best</span>
+                                    <span class="section-title__tagline">Sinal Verde Cursos de Trânsito: </span>
                                 </div>
-                                <h2 class="section-title__title">Efficiency at its best with our<br> logistics services
+                                <h2 class="section-title__title">Capacitação Completa para Motoristas
                                 </h2>
                             </div>
-                            <ul class="why-are-we__list list-unstyled">
-                                <li>
-                                    <div class="why-are-we__icon">
-                                        <span class="icon-arrow-down-left"></span>
-                                    </div>
-                                    <div class="icon">
-                                        <span class="icon-location why-are-we__location"></span>
-                                    </div>
-                                    <div class="content">
-                                        <h3>Real Time tracking</h3>
-                                        <p>Logistic service involves the ntation and control </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="why-are-we__icon-2">
-                                        <span class="icon-arrow-down-right"></span>
-                                    </div>
-                                    <div class="icon">
-                                        <span class="icon-shopping-cart why-are-we__cart"></span>
-                                    </div>
-                                    <div class="content">
-                                        <h3>On time delivary</h3>
-                                        <p>Logistic service involves the ntation and control </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-call why-are-we__call"></span>
-                                    </div>
-                                    <div class="content">
-                                        <h3>24/7 online support</h3>
-                                        <p>Logistic service involves the ntation and control </p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="why-are-we__img-2">
-                                <img src="assets/images/resources/why-are-we-img-2.jpg" alt="">
-                                <div class="why-are-we__year wow fadeInLeft" data-wow-delay="300ms">
-                                    <h3>Since 1920</h3>
-                                    <p>Logistic service involves the planning, implementation, and control of the
-                                        efficient and effective movement and storage</p>
-                                </div>
+                            <p class="why-choose-one__text">A Sinal Verde é uma plataforma EAD especializada em cursos para motoristas que buscam aprimorar seus conhecimentos e obter formação contínua. Oferecemos cursos 100% online, acessíveis de qualquer lugar, com suporte disponível 24 horas. Nossos cursos são reconhecidos e aceitos por todos os Detrans, garantindo a qualidade da capacitação. Com sede em Campinas, a Sinal Verde já capacitou milhares de motoristas que agora se destacam no mercado com uma formação qualificada e atualizada.</p>
+                            <div class="why-choose-one__btn-box">
+                                <a href="about.html" class="thm-btn why-choose-one__btn">Sobre nós<span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="why-choose-one__right">
+                            <div class="why-choose-one__img wow slideInRight" data-wow-delay="100ms"
+                                data-wow-duration="2500ms">
+                                <img src="assets/images/resources/why-choose-one-img-1.jpg" alt="">
+                               
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Why Are We End-->
+        </section><br><br>
 
-        <!--FAQ One Start-->
-        <section class="faq-one">
-            <div class="faq-one__bg-color"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="faq-one__left">
-                            <div class="section-title text-left">
-                                <div class="section-title__tagline-box">
-                                    <span class="section-title__tagline">FAQ</span>
-                                </div>
-                                <h2 class="section-title__title">Do You Have Any
-                                    <br> Question Please?</h2>
-                            </div>
-                            <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
-                                <div class="accrodion  active">
-                                    <div class="accrodion-title">
-                                        <h4>How can I track my shipment?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>It is a long established fact that a reader will be distr acted bioiiy
-                                                the real ism dablea content of a page when looking at its layout </p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4>What is the average delivery time?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>It is a long established fact that a reader will be distr acted bioiiy
-                                                the real ism dablea content of a page when looking at its layout </p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4>Do you offer Smooth Running Supply?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>It is a long established fact that a reader will be distr acted bioiiy
-                                                the real ism dablea content of a page when looking at its layout </p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="faq-one__right wow fadeInRight" data-wow-delay="300ms">
-                            <h3 class="faq-one__from-title">Our One-Stop Car Repair Shop</h3>
-                            <form class="contact-form-validated faq-one__form" action="assets/inc/sendemail.php"
-                                method="post" novalidate="novalidate">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6">
-                                        <div class="faq-one__input-box">
-                                            <input type="text" name="name" placeholder="Your Name" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6">
-                                        <div class="faq-one__input-box">
-                                            <input type="email" name="email" placeholder="Your Email" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6">
-                                        <div class="faq-one__input-box">
-                                            <input type="text" name="text" placeholder="Phone Number" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6">
-                                        <div class="faq-one__input-box">
-                                            <div class="select-box">
-                                                <select class="selectmenu wide">
-                                                    <option selected="selected">Choose a Option</option>
-                                                    <option>Type Of Service 01</option>
-                                                    <option>Type Of Service 02</option>
-                                                    <option>Type Of Service 03</option>
-                                                    <option>Type Of Service 04</option>
-                                                    <option>Type Of Service 05</option>
-                                                    <option>Type Of Service 06</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12">
-                                        <div class="faq-one__input-box text-message-box">
-                                            <textarea name="message" placeholder="Message here.."></textarea>
-                                        </div>
-                                    </div>
-                                    <div class=" col-xl-12">
-                                        <div class="faq-one__btn-box">
-                                            <button type="submit" class="thm-btn faq-one__btn">Submit
-                                                Now<span></span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="result"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--FAQ One End-->
 
-        <!--Testimonial One Start-->
-        <section class="testimonial-one">
-            <div class="container">
-                <div class="testimonial-one__inner">
-                    <div class="testimonial-one__img-one">
-                        <img src="assets/images/testimonial/testimonial-one-img-1.jpg" alt="">
-                    </div>
-                    <div class="section-title text-center">
+
+       
+    
+      
+
+     
+      <!--FAQ One Start-->
+<section class="faq-one">
+    <div class="faq-one__bg-color"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6">
+                <div class="faq-one__left">
+                    <div class="section-title text-left">
                         <div class="section-title__tagline-box">
-                            <span class="section-title__tagline">clients testimonial</span>
+                            <span class="section-title__tagline">FAQ</span>
                         </div>
-                        <h2 class="section-title__title">Your supply chain partner<br> for success</h2>
+                        <h2 class="section-title__title">Você Tem Alguma
+                            <br> Pergunta?</h2>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-5"></div>
-                        <div class="col-xl-7 col-lg-9">
-                            <div class="testimonial-one__right">
-                                <div class="thm-swiper__slider swiper-container" data-swiper-options='{
-                                    "slidesPerView": 1, 
-                                    "spaceBetween": 0,
-                                    "speed": 2000,
-                                    "loop": true,
-                                    "pagination": {
-                                        "el": ".swiper-dot-style1",
-                                        "type": "bullets",
-                                        "clickable": true
-                                    },
-                
-                                    
-                
-                                    "navigation": {
-                                        "nextEl": ".swiper-button-prev1",
-                                        "prevEl": ".swiper-button-next1"
-                                    },
-                                    "autoplay": { "delay": 9000 },
-                                    "breakpoints": {
-                                            "0": {
-                                                "spaceBetween": 0,
-                                                "slidesPerView": 1
-                                            },
-                                            "375": {
-                                                "spaceBetween": 0,
-                                                "slidesPerView": 1
-                                            },
-                                            "575": {
-                                                "spaceBetween": 0,
-                                                "slidesPerView": 1
-                                            },
-                                            "768": {
-                                                "spaceBetween": 30,
-                                                "slidesPerView": 1
-                                            },
-                                            "992": {
-                                                "spaceBetween": 30,
-                                                "slidesPerView": 1
-                                            },
-                                            "1200": {
-                                                "spaceBetween": 30,
-                                                "slidesPerView":1
-                                            },
-                                            "1320": {
-                                                "spaceBetween": 30,
-                                                "slidesPerView":1
-                                            }
-                                        }
-                                }'>
-                                    <div class="swiper-wrapper">
-                                        <!--Testimonial One Single Start-->
-                                        <div class="swiper-slide">
-                                            <div class="testimonial-one__single">
-                                                <div class="testimonial-one__quote">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="testimonial-one__client-img">
-                                                    <img src="assets/images/testimonial/testimonial-1-1.jpg" alt="">
-                                                </div>
-                                                <div class="testimonial-one__ratting">
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star last-star"></span>
-                                                </div>
-                                                <h3 class="testimonial-one__client-name">Nafiz Bhuiyan</h3>
-                                                <p class="testimonial-one__client-sub-title">Manegar</p>
-                                                <p class="testimonial-one__text">Logistic service involves the planning
-                                                    implementation an and control of the efficient and effective
-                                                    movement and storage of goods and materials Logistic service
-                                                    involves the planning implementation and control</p>
-                                            </div>
-                                        </div>
-                                        <!--Testimonial One Single End-->
-                                        <!--Testimonial One Single Start-->
-                                        <div class="swiper-slide">
-                                            <div class="testimonial-one__single">
-                                                <div class="testimonial-one__quote">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="testimonial-one__client-img">
-                                                    <img src="assets/images/testimonial/testimonial-1-2.jpg" alt="">
-                                                </div>
-                                                <div class="testimonial-one__ratting">
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star last-star"></span>
-                                                </div>
-                                                <h3 class="testimonial-one__client-name">Robert Son</h3>
-                                                <p class="testimonial-one__client-sub-title">Manegar</p>
-                                                <p class="testimonial-one__text">Logistic service involves the planning
-                                                    implementation an and control of the efficient and effective
-                                                    movement and storage of goods and materials Logistic service
-                                                    involves the planning implementation and control</p>
-                                            </div>
-                                        </div>
-                                        <!--Testimonial One Single End-->
-                                        <!--Testimonial One Single Start-->
-                                        <div class="swiper-slide">
-                                            <div class="testimonial-one__single">
-                                                <div class="testimonial-one__quote">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="testimonial-one__client-img">
-                                                    <img src="assets/images/testimonial/testimonial-1-3.jpg" alt="">
-                                                </div>
-                                                <div class="testimonial-one__ratting">
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star last-star"></span>
-                                                </div>
-                                                <h3 class="testimonial-one__client-name">Harbert Spin</h3>
-                                                <p class="testimonial-one__client-sub-title">Manegar</p>
-                                                <p class="testimonial-one__text">Logistic service involves the planning
-                                                    implementation an and control of the efficient and effective
-                                                    movement and storage of goods and materials Logistic service
-                                                    involves the planning implementation and control</p>
-                                            </div>
-                                        </div>
-                                        <!--Testimonial One Single End-->
-                                        <!--Testimonial One Single Start-->
-                                        <div class="swiper-slide">
-                                            <div class="testimonial-one__single">
-                                                <div class="testimonial-one__quote">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="testimonial-one__client-img">
-                                                    <img src="assets/images/testimonial/testimonial-1-4.jpg" alt="">
-                                                </div>
-                                                <div class="testimonial-one__ratting">
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star"></span>
-                                                    <span class="icon-star last-star"></span>
-                                                </div>
-                                                <h3 class="testimonial-one__client-name">Mainto Vula</h3>
-                                                <p class="testimonial-one__client-sub-title">Manegar</p>
-                                                <p class="testimonial-one__text">Logistic service involves the planning
-                                                    implementation an and control of the efficient and effective
-                                                    movement and storage of goods and materials Logistic service
-                                                    involves the planning implementation and control</p>
-                                            </div>
-                                        </div>
-                                        <!--Testimonial One Single End-->
+                    <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
+                        <div class="accrodion  active">
+                            <div class="accrodion-title">
+                                <h4>Quais cursos você oferece?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>Oferecemos uma variedade de cursos de formação e atualização, incluindo MOPP, Direção Defensiva, Primeiros Socorros, Transporte Escolar, Transporte de Emergência, entre outros. Esses cursos são projetados para aprimorar suas habilidades e garantir conformidade com as normas de segurança.</p>
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4>Como faço para me inscrever em um curso?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>Para se inscrever, basta visitar nosso site, escolher o curso desejado e preencher o formulário de inscrição. Você pode realizar o pagamento de forma segura via Pix ou outros métodos disponíveis.</p>
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4>Quais são as taxas dos cursos?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>As taxas dos cursos variam de acordo com o tipo. Por exemplo, os cursos de Direção Defensiva e Primeiros Socorros custam R$59,90, enquanto cursos mais especializados, como MOPP e Transporte de Emergência, têm preços a partir de R$189,00. Confira o site para os preços atualizados e opções de pagamento.</p>
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="faq-one__right wow fadeInRight" data-wow-delay="300ms">
+                    <h3 class="faq-one__from-title">Envie-nos um e-mail</h3>
+                    <form class="contact-form-validated faq-one__form" action="assets/inc/sendemail.php"
+                        method="post" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="faq-one__input-box">
+                                    <input type="text" name="name" placeholder="Seu Nome" required="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="faq-one__input-box">
+                                    <input type="email" name="email" placeholder="Seu E-mail" required="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="faq-one__input-box">
+                                    <input type="text" name="text" placeholder="Número de Telefone" required="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="faq-one__input-box">
+                                    <div class="select-box">
+                                        <select class="selectmenu wide">
+                                            <option selected="selected">Escolha uma Opção</option>
+                                            <option>Suporte</option>
+                                            <option>Pagamento</option>
+                                            <option>Problema com acesso</option>
+                                            <option>Cerfificado</option>
+                                            <option>Parceria</option>
+                                            <option>Reembolso</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-xl-12">
+                                <div class="faq-one__input-box text-message-box">
+                                    <textarea name="message" placeholder="Mensagem aqui.."></textarea>
+                                </div>
+                            </div>
+                            <div class=" col-xl-12">
+                                <div class="faq-one__btn-box">
+                                    <button type="submit" class="thm-btn faq-one__btn"  style="background-color: #d8b800;">Enviar Agora<span></span></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="testimonial-one__dot-style">
-                        <div class="swiper-dot-style1"></div>
-                    </div>
+                    </form>
+                    <div class="result"></div>
                 </div>
             </div>
-        </section>
-        <!--Testimonial One End-->
+        </div>
+    </div>
+</section>
+<!--FAQ One End-->
 
-        <!--Blog One Start-->
-        <section class="blog-one">
-            <div class="container">
-                <div class="section-title text-center">
-                    <div class="section-title__tagline-box">
-                        <span class="section-title__tagline">Latests Blog</span>
-                    </div>
-                    <h2 class="section-title__title">Streamlining your supply<br> chain processes</h2>
-                </div>
-                <div class="row">
-                    <!--Blog One Single Start-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
-                        <div class="blog-one__single">
-                            <div class="blog-one__img-box">
-                                <div class="blog-one__img">
-                                    <img src="assets/images/blog/blog-1-1.jpg" alt="">
-                                </div>
-                                <div class="blog-one__date">
-                                    <p>24 March</p>
-                                </div>
-                            </div>
-                            <div class="blog-one__content">
-                                <h3 class="blog-one__title"><a href="blog-details.html">Your trusted logistics provider
-                                        Express Logistics</a></h3>
-                                <p class="blog-one__text">It is a long established fact that a reader will williljl be
-                                    distracted </p>
-                                <div class="blog-one__read-more">
-                                    <a href="blog-details.html">Read More<span class="icon-arrow-right"></span></a>
-                                </div>
-                            </div>
+      
+
+       <!--Blog One Start-->
+<section class="blog-one" style="background-color: white;">
+    <div class="container">
+        <div class="section-title text-center">
+            <div class="section-title__tagline-box">
+                <span class="section-title__tagline">Últimos Blogs</span>
+            </div>
+            <h2 class="section-title__title">Otimizando seus Processos de Transporte e Segurança</h2>
+        </div>
+        <div class="row">
+            <!--Blog One Single Start-->
+            <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
+                <div class="blog-one__single">
+                    <div class="blog-one__img-box">
+                        <div class="blog-one__img">
+                            <img src="assets/images/blog/blog-1-1.jpg" alt="">
+                        </div>
+                        <div class="blog-one__date">
+                            <p>24 Março</p>
                         </div>
                     </div>
-                    <!--Blog One Single End-->
-                    <!--Blog One Single Start-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="blog-one__single">
-                            <div class="blog-one__img-box">
-                                <div class="blog-one__img">
-                                    <img src="assets/images/blog/blog-1-2.jpg" alt="">
-                                </div>
-                                <div class="blog-one__date">
-                                    <p>24 March</p>
-                                </div>
-                            </div>
-                            <div class="blog-one__content">
-                                <h3 class="blog-one__title"><a href="blog-details.html">Logistics expertise for your the
-                                        competitive advantage</a></h3>
-                                <p class="blog-one__text">It is a long established fact that a reader will williljl be
-                                    distracted </p>
-                                <div class="blog-one__read-more">
-                                    <a href="blog-details.html">Read More<span class="icon-arrow-right"></span></a>
-                                </div>
-                            </div>
+                    <div class="blog-one__content">
+                        <h3 class="blog-one__title"><a href="blog-details.html">Curso MOPP: Capacitação para Transporte de Produtos Perigosos</a></h3>
+                        <p class="blog-one__text">O Curso MOPP é essencial para motoristas que transportam produtos perigosos. Conheça os principais temas abordados e como a formação garante a segurança no trânsito.</p>
+                        <div class="blog-one__read-more">
+                            <a href="blog-details.html">Leia Mais<span class="icon-arrow-right"></span></a>
                         </div>
                     </div>
-                    <!--Blog One Single End-->
-                    <!--Blog One Single Start-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="300ms">
-                        <div class="blog-one__single">
-                            <div class="blog-one__img-box">
-                                <div class="blog-one__img">
-                                    <img src="assets/images/blog/blog-1-3.jpg" alt="">
-                                </div>
-                                <div class="blog-one__date">
-                                    <p>24 March</p>
-                                </div>
-                            </div>
-                            <div class="blog-one__content">
-                                <h3 class="blog-one__title"><a href="blog-details.html">Streamlining your supply chain
-                                        processes Express </a></h3>
-                                <p class="blog-one__text">It is a long established fact that a reader will williljl be
-                                    distracted </p>
-                                <div class="blog-one__read-more">
-                                    <a href="blog-details.html">Read More<span class="icon-arrow-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Blog One Single End-->
                 </div>
             </div>
-        </section>
-        <!--Blog One End-->
+            <!--Blog One Single End-->
+            <!--Blog One Single Start-->
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                <div class="blog-one__single">
+                    <div class="blog-one__img-box">
+                        <div class="blog-one__img">
+                            <img src="assets/images/blog/blog-1-2.jpg" alt="">
+                        </div>
+                        <div class="blog-one__date">
+                            <p>25 Março</p>
+                        </div>
+                    </div>
+                    <div class="blog-one__content">
+                        <h3 class="blog-one__title"><a href="blog-details.html">Direção Defensiva e Primeiros Socorros: Proteja-se no Trânsito</a></h3>
+                        <p class="blog-one__text">Aprenda as melhores práticas para direção defensiva e primeiros socorros, garantindo a sua segurança e a de outros no trânsito.</p>
+                        <div class="blog-one__read-more">
+                            <a href="blog-details.html">Leia Mais<span class="icon-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Blog One Single End-->
+            <!--Blog One Single Start-->
+            <div class="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="300ms">
+                <div class="blog-one__single">
+                    <div class="blog-one__img-box">
+                        <div class="blog-one__img">
+                            <img src="assets/images/blog/blog-1-3.jpg" alt="">
+                        </div>
+                        <div class="blog-one__date">
+                            <p>26 Março</p>
+                        </div>
+                    </div>
+                    <div class="blog-one__content">
+                        <h3 class="blog-one__title"><a href="blog-details.html">Atualização MOPP: Mantenha-se Regularizado</a></h3>
+                        <p class="blog-one__text">Saiba a importância da atualização do curso MOPP a cada 5 anos para motoristas especializados, garantindo a conformidade com as regulamentações.</p>
+                        <div class="blog-one__read-more">
+                            <a href="blog-details.html">Leia Mais<span class="icon-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Blog One Single End-->
+        </div>
+    </div>
+</section>
+<!--Blog One End-->
+
 
         <!--CTA One Start-->
         <section class="cta-one">
             <div class="container">
                 <div class="cta-one__inner">
                     <div class="cta-one__bg-img"
-                        style="background-image: url(assets/images/resources/cta-one-bg-img.jpg);"></div>
+                        style="background-color: #ffcc00 ;"></div>
                     <div class="cta-one__content-box">
                        
                         <h3 class="cta-one__title"> <font color="black" ><p>Precisando de ajuda?
@@ -1507,135 +1358,127 @@
         </section>
         <!--CTA One End-->
 
-        <!--Site Footer Start-->
-        <footer class="site-footer">
-            <div class="site-footer__shape-1 float-bob-y">
-                <img src="assets/images/shapes/footer-shape-1.png" alt="">
-            </div>
-            <div class="site-footer__top">
-                <div class="container">
-                    <div class="site-footer__top-inner">
-                        <div class="row">
-                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                                <div class="footer-widget__column footer-widget__about">
-                                    <div class="footer-widget__logo">
-                                        <a href="index.html"><img src="assets/images/resources/footer-logo-1.png"
-                                                alt=""></a>
-                                    </div>
-                                    <p class="footer-widget__about-text">It is a long established fact that a reader
-                                        Empowering Communities</p>
-                                    <ul class="footer-widget__about-contact list-unstyled">
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-envolop email-icon"></span>
-                                            </div>
-                                            <p><a href="mailto:debra.holt@example.com">debra.holt@example.com,</a></p>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-location location-icon"></span>
-                                            </div>
-                                            <p>3891 Ranchview Dr. Richardson</p>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-call phone-call"></span>
-                                            </div>
-                                            <p><a href="tel:0192584341342">0192584341342</a></p>
-                                        </li>
-                                    </ul>
-                                </div>
+
+<!--Site Footer Start-->
+<footer class="site-footer">
+    <div class="site-footer__shape-1 float-bob-y">
+        <img src="assets/images/shapes/footer-shape-1.png" alt="">
+    </div>
+    <div class="site-footer__top">
+        <div class="container">
+            <div class="site-footer__top-inner">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="footer-widget__column footer-widget__about">
+                            <div class="footer-widget__logo">
+                                <a href="index.html"><img src="assets/images/resources/footer-logo-1.png" alt=""></a>
                             </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                                <div class="footer-widget__column footer-widget__company">
-                                    <div class="footer-widget__title-box">
-                                        <h3 class="footer-widget__title">About Company</h3>
+                            <p class="footer-widget__about-text">A Sinal Verde oferece cursos de formação e atualização para motoristas, garantindo capacitação de qualidade e reconhecida nacionalmente.</p>
+                            <ul class="footer-widget__about-contact list-unstyled">
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-envolop email-icon"></span>
                                     </div>
-                                    <ul class="footer-widget__company-list list-unstyled">
-                                        <li>
-                                            <a href="about.html">About Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="faq.html">FAQ</a>
-                                        </li>
-                                        <li>
-                                            <a href="testimonials.html">Testimonial</a>
-                                        </li>
-                                        <li>
-                                            <a href="services.html">Service</a>
-                                        </li>
-                                        <li>
-                                            <a href="blog.html">Blog And News</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                                <div class="footer-widget__column footer-widget__services">
-                                    <div class="footer-widget__title-box">
-                                        <h3 class="footer-widget__title">Services</h3>
+                                    <p><a href="mailto:contato@sinalverde.com">contato@sinalverde.com</a></p>
+                                </li>
+                               
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-call phone-call"></span>
                                     </div>
-                                    <ul class="footer-widget__services-list list-unstyled">
-                                        <li>
-                                            <a href="express-freight-solutions.html"><span
-                                                    class="icon-angle-left"></span>Express Freight
-                                                Solutions</a>
-                                        </li>
-                                        <li>
-                                            <a href="speedy-dispatch.html"><span class="icon-angle-left"></span>Rapid
-                                                Delivery Services</a>
-                                        </li>
-                                        <li>
-                                            <a href="speedy-dispatch.html"><span class="icon-angle-left"></span>Speedy
-                                                Haulage</a>
-                                        </li>
-                                        <li>
-                                            <a href="swift-supply-chain.html"><span
-                                                    class="icon-angle-left"></span>Reliable Transporters</a>
-                                        </li>
-                                        <li>
-                                            <a href="swift-supply-chain.html"><span class="icon-angle-left"></span>Swift
-                                                Ship Solutions</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                                <div class="footer-widget__column footer-widget__newsletter">
-                                    <div class="footer-widget__title-box">
-                                        <h3 class="footer-widget__title">Newslatter</h3>
+                                    <p><a href="tel:+5531998765432">+55 (31) 99876-5432</a></p>
+                                </li>
+                                 <li>
+                                    <div class="icon">
+                                        <span class="icon-instagram instagram-icon"></span>
                                     </div>
-                                    <p class="footer-widget__newsletter-text">Financial planners help people to gain
-                                        knowledge aboutw</p>
-                                    <form class="footer-widget__newsletter-form mc-form" data-url="MC_FORM_URL"
-                                        novalidate="novalidate">
-                                        <div class="footer-widget__newsletter-form-input-box">
-                                            <input type="email" placeholder="Your e-mail" name="EMAIL">
-                                            <button type="submit" class="footer-widget__newsletter-btn"><span
-                                                    class="icon-paper-plane"></span></button>
-                                        </div>
-                                    </form>
-                                    <div class="mc-form__response"></div>
-                                </div>
+                                    <p><a href="https://www.instagram.com/sinalverde" target="_blank">Siga @sinalverde</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="footer-widget__column footer-widget__company">
+                            <div class="footer-widget__title-box">
+                                <h3 class="footer-widget__title">Sobre a Empresa</h3>
                             </div>
+                            <ul class="footer-widget__company-list list-unstyled">
+                                <li>
+                                    <a href="about.html">Sobre nós</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="testimonials.html">Testemunhos</a>
+                                </li>
+                                <li>
+                                    <a href="services.html">Serviços</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html">Blog e Notícias</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="footer-widget__column footer-widget__services">
+                            <div class="footer-widget__title-box">
+                                <h3 class="footer-widget__title">Cursos Oferecidos</h3>
+                            </div>
+                            <ul class="footer-widget__services-list list-unstyled">
+                                <li>
+                                    <a href="services.html"><span class="icon-angle-left"></span>Curso MOPP</a>
+                                </li>
+                                <li>
+                                    <a href="express-freight-solutions.html"><span class="icon-angle-left"></span>Direção Defensiva</a>
+                                </li>
+                                <li>
+                                    <a href="speedy-dispatch.html"><span class="icon-angle-left"></span>Primeiros Socorros</a>
+                                </li>
+                                <li>
+                                    <a href="swift-supply-chain.html"><span class="icon-angle-left"></span>Transporte Escolar</a>
+                                </li>
+                                <li>
+                                    <a href="quick-move-logistics.html"><span class="icon-angle-left"></span>Transporte Coletivo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="footer-widget__column footer-widget__newsletter">
+                            <div class="footer-widget__title-box">
+                                <h3 class="footer-widget__title">Newsletter</h3>
+                            </div>
+                            <p class="footer-widget__newsletter-text">Receba atualizações sobre novos cursos e descontos especiais.</p>
+                            <form class="footer-widget__newsletter-form mc-form" data-url="MC_FORM_URL" novalidate="novalidate">
+                                <div class="footer-widget__newsletter-form-input-box">
+                                    <input type="email" placeholder="Seu e-mail" name="EMAIL">
+                                    <button type="submit" class="footer-widget__newsletter-btn"><span class="icon-paper-plane"></span></button>
+                                </div>
+                            </form>
+                            <div class="mc-form__response"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="site-footer__bottom">
-                <div class="container">
-                    <div class="site-footer__bottom-inner">
-                        <p class="site-footer__bottom-text">© themehealer 2024 | All Rights Reserved</p>
-                        <ul class="list-unstyled site-footer__bottom-menu">
-                            <li><a href="about.html">Trams & Condition</a></li>
-                            <li><a href="about.html">Privacy Policy</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
+        </div>
+    </div>
+    <div class="site-footer__bottom">
+        <div class="container">
+            <div class="site-footer__bottom-inner">
+                <p class="site-footer__bottom-text">© Sinal Verde 2024 | Todos os direitos reservados</p>
+                <ul class="list-unstyled site-footer__bottom-menu">
+                    <li><a href="terms.html">Termos & Condições</a></li>
+                    <li><a href="privacy-policy.html">Política de Privacidade</a></li>
+                    <li><a href="contact.html">Fale Conosco</a></li>
+                </ul>
             </div>
-        </footer>
-        <!--Site Footer End-->
+        </div>
+    </div>
+</footer>
+<!--Site Footer End-->
+
 
 
     </div><!-- /.page-wrapper -->

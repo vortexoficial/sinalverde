@@ -284,6 +284,7 @@ ul {
   background-color: rgba(var(--onpoint-white-rgb), .20);
   border-radius: 50%;
   transition: 0.2s;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* horizontal, vertical, desfoque, cor */
 }
 
 .thm-btn>span::after {
@@ -292,6 +293,8 @@ ul {
   left: 2px;
   right: 0;
   bottom: 0;
+  
+
   padding-top: inherit;
   padding-bottom: inherit;
   content: "\e911";
@@ -308,6 +311,7 @@ ul {
 .thm-btn:hover>span::after {
   -webkit-animation: bounceright 0.3s alternate ease infinite;
   animation: bounceright 0.3s alternate ease infinite;
+  
 }
 
 .bootstrap-select .btn-light:not(:disabled):not(.disabled).active,
@@ -2506,8 +2510,8 @@ ul {
 }
 
 .services-one__btn {
-  background-color: var(--onpoint-extra);
-  color: var(--onpoint-black);
+  background-color: #ffc400;
+  color: #ffffff;
 }
 
 .services-one__btn>span {
@@ -3048,7 +3052,7 @@ ul {
   left: -5px;
   right: -5px;
   bottom: -5px;
-  border: 5px solid rgba(var(--onpoint-base-rgb), .60);
+ 
   border-radius: 50%;
 }
 
@@ -3580,7 +3584,7 @@ ul {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 85px;
+  bottom: 26px;
   background-color: var(--onpoint-black);
 }
 
@@ -4137,7 +4141,7 @@ ul {
   right: 0;
   bottom: 0;
   border-radius: 20px;
-  background: linear-gradient(89.46deg, #ffd900 49.9%, rgba(91, 9, 17, 0) 99.53%);
+  background: #ffd000;
   z-index: 1;
 }
 
@@ -8189,7 +8193,7 @@ ul {
 .services-carousel-page {
   position: relative;
   display: block;
-  padding: 55px 0 119px;
+  padding: 55px 0 060px;
 }
 
 .services-carousel-page .services-one__single {
@@ -8260,6 +8264,46 @@ ul {
     font-size: 16px; /* Tamanho da fonte */
     margin-right: 10px; /* Margem à direita, se necessário */
 }
+
+.highlight-box {
+    background-color: #ffc400; /* Cor amarela */
+    padding: 5px 10px; /* Espaçamento ao redor do texto */
+    border-radius: 10px; /* Cantos arredondados */
+    display: inline-block; /* Para o retângulo se ajustar ao tamanho do texto */
+}
+
+
+/* Desabilitar a bolinha de navegação */
+#main-carousel .owl-dots {
+    display: none !important; /* Esconde as bolinhas de navegação */
+}
+
+/* Desabilitar autoplay no desktop */
+@media (min-width: 1200px) {
+    .no-autoplay-desktop .owl-carousel {
+        -webkit-animation: none !important;
+        animation: none !important;
+    }
+
+    .no-autoplay-desktop .owl-carousel .owl-item {
+        -webkit-transition: none !important;
+        transition: none !important;
+    }
+}
+
+/* Manter autoplay no mobile */
+@media (max-width: 1199px) {
+    .no-autoplay-desktop .owl-carousel {
+        -webkit-animation: autoplay 6s linear infinite !important;
+        animation: autoplay 6s linear infinite !important;
+    }
+}
+
+/* Reduzir tamanho dos ícones com FontAwesome */
+.counter-one__icon span {
+    font-size: 30px !important;  /* Ajuste o tamanho conforme necessário */
+}
+
 /*--------------------------------------------------------------
 # End
 --------------------------------------------------------------*/

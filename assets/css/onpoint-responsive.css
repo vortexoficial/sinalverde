@@ -1281,7 +1281,7 @@
     .main-slider .container {
         padding-top: 70px;
         padding-bottom: 59px;
-       background: none;
+     
     }
 
 
@@ -1442,6 +1442,29 @@
 
 
 
+}
+/* Desabilitar autoplay e impedir rolagem do carrossel no desktop */
+@media (min-width: 1200px) {
+    .no-autoplay-desktop #main-carousel .owl-carousel {
+        /* Desabilita o autoplay */
+        --owl-carousel-autoplay: false !important;
+        animation: none !important;  /* Desabilita animação */
+        transition: none !important; /* Desativa transições */
+    }
+
+    .no-autoplay-desktop #main-carousel .owl-carousel.owl-loaded .owl-stage {
+        transform: none !important; /* Impede o movimento do carrossel */
+    }
+
+    /* Desabilitar o "arraste" no desktop */
+    .no-autoplay-desktop #main-carousel .owl-carousel {
+        pointer-events: none !important; /* Impede interações no desktop */
+    }
+
+    /* Caso você queira permitir interação manual, remova o "pointer-events: none" */
+    .no-autoplay-desktop #main-carousel .owl-carousel {
+        pointer-events: all !important;
+    }
 }
 
 

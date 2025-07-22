@@ -1286,12 +1286,12 @@
 
 
     .banner-one {
-        padding: 101px 0 120px;
+        padding: 45px 0 21px;
     }
 
     .banner-one__title {
         font-size: 40px;
-        line-height: 50px;
+        line-height: 38px;
     }
 
     .banner-one__right {
@@ -1315,7 +1315,7 @@
     }
 
     .banner-one__call-number p {
-        margin-bottom: 6px;
+        margin-bottom: -6px;
     }
 
     .banner-one__call-number h5 {
@@ -1471,3 +1471,4 @@
 
 
 @media only screen and (min-width: 1200px) and (max-width: 1470px) {}
+

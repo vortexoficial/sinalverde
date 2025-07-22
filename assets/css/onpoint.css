@@ -2284,7 +2284,7 @@ ul {
   font-size: 80px;
   color: var(--onpoint-white);
   font-weight: 700;
-  line-height: 94px;
+  line-height: 77px;
   margin-top: 14px;
   margin-bottom: 21px;
 }
@@ -2351,6 +2351,7 @@ ul {
   padding: 80px 0 36px;
   padding-left: 80px;
   margin-top: -50px;
+  border-radius: 25px;
 }
 
 .banner-one__call {
@@ -2389,7 +2390,7 @@ ul {
 
 .banner-one__call-number h5 {
   font-size: 48px;
-  line-height: 48px;
+  line-height: 14px;
   font-weight: 700;
 }
 

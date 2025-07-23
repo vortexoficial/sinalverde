@@ -139,7 +139,7 @@
                             </div>
                             <h2 class="banner-one__title"><font color="black">Curso MOPP<br>Transporte de Produtos Perigosos</font></span></h2>
                            <div class="banner-one__btn-box">
-                                                               <a href="#" class="thm-btn main-menu__btn">COMPRAR CURSO<span></span></a>
+                                                               <a href="#comprar" class="thm-btn main-menu__btn">COMPRAR CURSO<span></span></a>
 
                             </div>
                         </div>
@@ -198,7 +198,7 @@
             <img src="assets/images/iconep1.png" alt="Ícone de Cifrão"> <!-- Ícone de cifrão em PNG -->
         </div>
         <h3 class="services-two__title"><a href="express-freight-solutions.html">Reembolso</a></h3>
-        <p class="services-two__text">Para solicitar o reembolso dentro de 7 dias, o aluno não deve ter iniciado ou finalizado nenhuma aula do curso.</p>
+        <p class="services-two__text">Para solicitar o reembolso dentro de 7 dias, o aluno não deve ter iniciado nenhuma aula do curso.</p>
     </div>
 </div>
 
@@ -272,37 +272,90 @@
         <!--Why Choose Two End-->
 
         
-
-      <!--Process One Start-->
-<section class="process-one" style="background-color: rgb(255, 208, 0);">
+<section  id="comprar" class="process-one" style="background-color: rgb(255, 208, 0); ">
     <div class="container">
         <div class="section-title text-center" style="margin-bottom: 20px;">
             <h2 class="section-title__title" style="font-size: 40px; margin-bottom: 10px;">Invista em seu futuro</h2>
         </div>
-        <div class="price-container" style="font-family: 'Rajdhani', sans-serif; text-align: center; padding: 20px; width: 100%; font-size: 30px; display: flex; flex-direction: column; gap: 20px;">
-            <div style="color: #850000;  font-size: 22px;">De: <span style="text-decoration: line-through;">R$279,00</span></font></div>
-            <div style="color: #fff; font-size: 48px; font-weight: bold; margin-top: 5px;">Por: R$189,00</div>
+        <div class="price-container" style="font-family: 'Rajdhani', sans-serif; text-align: center; padding: 20px; width: 100%; font-size: 30px; display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            <div style="color: #850000; font-size: 22px;">De: <span style="text-decoration: line-through;">R$279,00</span></font></div>
+            
+            <!-- Retângulo Preto com animação contínua -->
+            <div class="price-box" style="background-color: #000; color: #fff; font-size: 48px; font-weight: bold; margin-top: 5px; padding: 25px 30px; display: inline-block; border-radius: 10px; text-align: center; width: 355px; animation: pulse 1.5s infinite ease-in-out; position: relative; overflow: hidden;">
+                Por: R$189,00
+                
+                <!-- Reflexo animado dentro do retângulo -->
+                <div class="reflection" style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0)); animation: slideReflection 3s infinite;"></div>
+            </div>
+            
             <div style="color: #000; font-size: 32px; margin-top: 10px;">
                 <span style="margin-right: 10px; font-size: 24px;">
                     <i class="fas fa-credit-card" style="color: #000;"></i> 3 x de R$59,99 sem juros
                 </span>
             </div>
-            <div style="color: #fff; font-size: 32px; margin-top: 10px;">
-                <span style="font-weight: bold; font-size: 30px; padding: 4px 12px; border-radius: 20px;">
-                    <img src="assets/images/pix.png" alt="PIX" style="width: 25px; vertical-align: middle;"> 
+            
+            <!-- Retângulo Verde sem animação contínua, mas com animação no hover -->
+            <div style="background-color: #175e46; color: #fff; font-size: 25px;  margin-top: 10px; padding: 10px 20px; display: inline-block; border-radius: 10px;" class="pix-box">
+                <span style=" font-size: 30px; padding: 4px 12px; border-radius: 20px;">
+                    <img src="assets/images/pix.png" alt="PIX" style="width: 67px; vertical-align: middle;"> 
                 </span> 
-                <span style="font-weight: bold; font-size: 32px;">Ou R$170,10 no Pix</span>
+                <span>Ou R$170,10 no Pix</span>
             </div>
+            
             <!-- Botão COMPRAR AGORA --><br>
             <div class="banner-one__btn-box">
-                <a href="#" class="thm-btn banner-one__btn">
+                <a href="https://wa.me/554299711800?text=Ol%C3%A1%2C%20gostaria%20de%20adquirir%20o%20Curso%20MOPP%0D%0ATransporte%20de%20Produtos%20Perigosos%21" target="_blank" class="thm-btn banner-one__btn">
                     COMPRAR AGORA!<span></span>
                 </a>
             </div>
         </div>
     </div>
 </section>
-<!--Process One End-->
+
+<!-- Adicione o código da animação no CSS -->
+<style>
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes slideReflection {
+        0% {
+            left: -100%;
+        }
+        100% {
+            left: 100%;
+        }
+    }
+
+    .pix-box:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Adicionando as imagens de fundo para desktop e mobile */
+    .process-one {
+        background-image: url('assets/images/bgvalor.png'); /* Para desktop */
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Imagem de fundo para mobile */
+    @media (max-width: 768px) {
+        .process-one {
+            background-image: url('assets/images/bgvalor2.png');
+        }
+    }
+</style>
+
+
 
 
 <!--FAQ One Start-->

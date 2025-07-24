@@ -4924,7 +4924,7 @@ ul {
   display: block;
   background-color: var(--onpoint-extra);
   counter-reset: count;
-  padding: 120px 0 90px;
+  padding: 64px 0 360px;
   z-index: 1;
 }
 

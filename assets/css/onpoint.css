@@ -2233,6 +2233,7 @@ ul {
   z-index: 1;
   border-bottom-left-radius: 45px;
   border-bottom-right-radius: 45px;
+  
 }
 
 
@@ -5823,9 +5824,10 @@ ul {
   right: 0;
   bottom: 0;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.87) 24.4%, rgba(102, 102, 102, 0) 100%);
-  border-radius: 50px;
+     
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
-
 .page-header__inner {
   position: relative;
   display: block;
@@ -8313,3 +8315,146 @@ ul {
 /*--------------------------------------------------------------
 # End
 --------------------------------------------------------------*/
+/* ==========================================================================
+   CSS NOVO PARA MENU MOBILE (LOGO | BOTÃO | HAMBURGER)
+   ========================================================================== */
+
+/* Esconde o ícone de 3 pontos (sidebar) no mobile, que não queremos */
+@media (max-width: 991px) {
+    .main-header .main-menu__nav-sidebar-icon,
+    .main-header-two .main-menu__nav-sidebar-icon {
+        display: none !important;
+    }
+}
+
+/* Aplica o layout do seu print (image_faca42.jpg) */
+@media only screen and (max-width: 767px) {
+    
+    /* --- 1. AJUSTES GERAIS DO HEADER --- */
+
+    /* Faz o header (branco ou escuro) ser flexível */
+    .main-header .main-menu__wrapper-inner,
+    .main-header-two .main-menu-two__wrapper-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap; /* Impede a quebra de linha */
+        padding-top: 15px; 
+        padding-bottom: 15px;
+    }
+
+    /* --- 2. AJUSTES DA LOGO (ESQUERDA) --- */
+
+    /* Container da logo (branco ou escuro) */
+    .main-header .main-menu__left,
+    .main-header-two .main-menu__left {
+        flex: 0 1 auto; /* Deixa de ocupar 100% da largura */
+        padding: 0;
+        margin: 0;
+        gap: 0;
+    }
+
+    .main-header .main-menu__logo,
+    .main-header-two .main-menu__logo {
+        padding: 0; /* Remove padding original */
+    }
+
+    /* Diminui o tamanho da logo no mobile */
+    .main-header .main-menu__logo a img,
+    .main-header-two .main-menu__logo a img {
+        max-width: 160px; /* <-- Tamanho da logo no mobile */
+        height: auto;
+    }
+
+    /* --- 3. AJUSTES DOS BOTÕES (DIREITA) --- */
+
+    /* FORÇA o container da direita (que tem o botão) a aparecer */
+    .main-header .main-menu__right,
+    .main-header-two .main-menu__right {
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+
+    /* Alinha o botão e o ícone de 3 pontos (que será escondido) */
+    .main-header .main-menu__search-nav-sidebar-btn-box,
+    .main-header-two .main-menu__search-nav-sidebar-btn-box {
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    /* Mostra a caixa do hamburger (que vamos adicionar no HTML) */
+    .main-menu__mobile-toggler-box {
+        display: block;
+        order: 2; /* Posição 2 (depois do botão) */
+        margin-left: 10px; /* Espaço entre o botão e o hamburger */
+    }
+
+    /* Cor do ícone hamburger (Branco: index.html) */
+    .main-header .main-menu__mobile-toggler-box .mobile-nav__toggler {
+        font-size: 24px;
+        color: #000; 
+    }
+    
+    /* Cor do ícone hamburger (Escuro: páginas de curso) */
+    .main-header-two .main-menu__mobile-toggler-box .mobile-nav__toggler {
+        font-size: 24px;
+        color: #fff; 
+    }
+
+    /* --- 4. AJUSTES DO BOTÃO "ÁREA DO ALUNO" --- */
+
+    /* Container do botão */
+    .main-header .main-menu__btn-box,
+    .main-header-two .main-menu__btn-box {
+        display: block; /* Garante que o botão apareça */
+        order: 1; /* Posição 1 (antes do hamburger) */
+    }
+
+    /* Estilo do botão (tamanho reduzido para mobile) */
+    .main-header .main-menu__btn,
+    .main-header-two .main-menu__btn {
+        padding: 6px 10px 6px 15px !important; 
+        font-size: 10px !important;
+        letter-spacing: 0.5px !important;
+        gap: 8px !important;
+        height: auto;
+        border: none;
+    }
+
+    /* Estilo da seta do botão */
+    .main-header .main-menu__btn > span,
+    .main-header-two .main-menu__btn > span {
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    /* Estilo do ícone dentro da seta */
+    .main-header .main-menu__btn > span::after,
+    .main-header-two .main-menu__btn > span::after {
+        font-size: 8px !important;
+    }
+
+    /* --- 5. LIMPEZA --- */
+    
+    /* Esconde o menu desktop (ul) no mobile */
+    .main-header .main-menu__main-menu-box,
+    .main-header-two .main-menu__main-menu-box {
+        display: none;
+    }
+
+    /* Esconde o hamburger que está no lugar errado (o original) */
+    .main-menu__main-menu-box .mobile-nav__toggler {
+        display: none !important;
+    }
+}
+
+/* Bloco de segurança para garantir que o toggler box esteja oculto no desktop */
+@media only screen and (min-width: 992px) {
+    .main-menu__mobile-toggler-box {
+        display: none;
+    }
+}
+

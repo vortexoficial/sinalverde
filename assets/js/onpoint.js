@@ -9,7 +9,6 @@
       let self = $(this);
 
       self.on("mouseenter", function () {
-        console.log($(this));
         $(".project-one__box li").removeClass("active");
         $(this).addClass("active");
       });
@@ -308,7 +307,11 @@
               $(form).find('input[type="email"]').val("");
               $(form).find("textarea").val("");
             }
-          );
+          ).fail(function () {
+            $(form).parent().find(".result").html(
+              "<div class='inner error'><p class='error'>Não foi possível enviar por este formulário. Entre em contato pelo WhatsApp ou pelo e-mail informado no site.</p></div>"
+            );
+          });
           return false;
         }
       });
@@ -321,6 +324,14 @@
       var Self = $(this);
       var mcURL = Self.data("url");
       var mcResp = Self.parent().find(".mc-form__response");
+
+      if (!mcURL || mcURL === "MC_FORM_URL") {
+        Self.on("submit", function (e) {
+          e.preventDefault();
+          mcResp.html('<p class="mc-message">Newsletter ainda não configurada.</p>');
+        });
+        return;
+      }
 
       Self.ajaxChimp({
         url: mcURL,

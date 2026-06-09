@@ -1105,6 +1105,7 @@
   "use strict";
 
   var publishedAssetsRoot = "https://eadsinalverde.com.br/";
+  var publishedAssetsVersion = "20260609-assets-restored";
   var assetMarker = "/assets/";
 
   function getPublishedAssetUrl(source) {
@@ -1124,7 +1125,8 @@
       return "";
     }
 
-    return publishedAssetsRoot + resolved.pathname.slice(markerIndex + 1);
+    return publishedAssetsRoot + resolved.pathname.slice(markerIndex + 1) +
+      "?v=" + publishedAssetsVersion;
   }
 
   function recoverImage(image) {

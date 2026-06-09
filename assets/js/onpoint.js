@@ -1082,15 +1082,6 @@
         stricky.removeClass("stricky-fixed");
       }
     }
-    if ($(".scroll-to-top").length) {
-      var strickyScrollPos = 100;
-      if ($(window).scrollTop() > strickyScrollPos) {
-        $(".scroll-to-top").fadeIn(500);
-      } else if ($(this).scrollTop() <= strickyScrollPos) {
-        $(".scroll-to-top").fadeOut(500);
-      }
-    }
-
     OnePageMenuScroll();
 
   });
@@ -1108,3 +1099,88 @@
 
 
 })(jQuery);
+
+// Recover image assets that are missing or invalid in the local package.
+(function () {
+  "use strict";
+
+  var publishedAssetsRoot = "https://eadsinalverde.com.br/";
+  var assetMarker = "/assets/";
+
+  function getPublishedAssetUrl(source) {
+    if (!source || source.indexOf("data:") === 0) {
+      return "";
+    }
+
+    var resolved;
+    try {
+      resolved = new URL(source, window.location.href);
+    } catch (error) {
+      return "";
+    }
+
+    var markerIndex = resolved.pathname.indexOf(assetMarker);
+    if (markerIndex === -1) {
+      return "";
+    }
+
+    return publishedAssetsRoot + resolved.pathname.slice(markerIndex + 1);
+  }
+
+  function recoverImage(image) {
+    if (image.dataset.publishedAssetFallback === "true") {
+      return;
+    }
+
+    var publishedUrl = getPublishedAssetUrl(image.getAttribute("src"));
+    if (!publishedUrl || image.src === publishedUrl) {
+      return;
+    }
+
+    image.dataset.publishedAssetFallback = "true";
+    image.src = publishedUrl;
+  }
+
+  function recoverBackground(element, backgroundImage, source) {
+    var publishedUrl = getPublishedAssetUrl(source);
+    if (!publishedUrl || source === publishedUrl) {
+      return;
+    }
+
+    var testImage = new Image();
+    testImage.onerror = function () {
+      element.style.backgroundImage = backgroundImage.replace(source, publishedUrl);
+    };
+    testImage.src = source;
+  }
+
+  function recoverAssets() {
+    document.querySelectorAll("img").forEach(function (image) {
+      image.addEventListener("error", function () {
+        recoverImage(image);
+      });
+
+      if (image.complete && image.naturalWidth === 0) {
+        recoverImage(image);
+      }
+    });
+
+    document.querySelectorAll("*").forEach(function (element) {
+      var backgroundImage = window.getComputedStyle(element).backgroundImage;
+      if (!backgroundImage || backgroundImage === "none") {
+        return;
+      }
+
+      var match = backgroundImage.match(/url\(["']?([^"')]+)["']?\)/);
+      if (match) {
+        recoverBackground(element, backgroundImage, match[1]);
+      }
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", recoverAssets);
+  } else {
+    recoverAssets();
+  }
+})();
